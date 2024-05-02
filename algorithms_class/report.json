@@ -1,0 +1,74 @@
+{
+    "algoritmos": {
+      "Naive Bayes": {
+        "resultados": [
+          {
+            "configuracao": "Escalonado OneHotEncoder + LabelEncoder (previsoresHot_esc)",
+            "acuracia_teste": 84.78,
+            "acuracia_treino": 86.12
+          },
+          {
+            "configuracao": "Escalonado + encoder manual (previsores_esc)",
+            "acuracia_teste": 84.42,
+            "acuracia_treino": 83.62
+          },
+          {
+            "configuracao": "OneHotEncoder sem escalonamento (previsores_hot)",
+            "acuracia_teste": 84.78,
+            "acuracia_treino": 86.12
+          },
+          {
+            "configuracao": "LabelEncoder sem escalonamento (previsores_label)",
+            "acuracia_teste": 84.78,
+            "acuracia_treino": 84.24
+          }
+        ],
+        "melhor_modelo": {
+          "configuracao": "Escalonado OneHotEncoder + LabelEncoder (previsoresHot_esc)",
+          "cross_validation": {
+            "acuracia_media": 85.17
+          }
+        }
+      },
+      "SVM": {
+        "resultados": [
+          {
+            "configuracao": "",
+            "acuracia_teste": 0,
+            "acuracia_treino": 0
+          },
+          {
+            "configuracao": "",
+            "acuracia_teste": 0,
+            "acuracia_treino": 0
+          }
+        ],
+        "melhor_modelo": {
+          "configuracao": "",
+          "cross_validation": {
+            "acuracia_media": 0
+          }
+        }
+      },
+        "Random Forest": {
+            "resultados": [
+            {
+                "configuracao": "",
+                "acuracia_teste": 0,
+                "acuracia_treino": 0
+            },
+            {
+                "configuracao": "",
+                "acuracia_teste": 0,
+                "acuracia_treino": 0
+            }
+            ],
+            "melhor_modelo": {
+            "configuracao": "",
+            "cross_validation": {
+                "acuracia_media": 0
+            }
+            }
+        }
+    }
+  }
