@@ -217,9 +217,29 @@
         }
         ],
         "melhor_modelo": {
-        "configuracao": "",
+        "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) + criterion = entropy + max_depth = 3",
         "cross_validation": {
-            "acuracia_media": 0
+            "acuracia_media": "83.33%"
+        }
+        }
+    },
+    "Random Forest": {
+        "resultados": [
+        {
+            "configuracao": "Encoder manual sem escalonamento (previsores) + criterion = entropy + max_depth = 4 + n_estimators = 140",
+            "acuracia_teste": "85.87%",
+            "acuracia_treino": "88.77%"
+        },
+        {
+            "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) + criterion = entropy + max_depth = 6 + n_estimators = 200",
+            "acuracia_teste": "85.14%",
+            "acuracia_treino": "92.51%"
+        }
+        ],
+        "melhor_modelo": {
+        "configuracao": "Encoder manual sem escalonamento (previsores) + criterion = entropy + max_depth = 4 + n_estimators = 140",
+        "cross_validation": {
+            "acuracia_media": "85.81%"
         }
         }
     }
