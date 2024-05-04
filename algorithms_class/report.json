@@ -113,25 +113,114 @@
             }
         }
     },
-        "Random Forest": {
-            "resultados": [
-            {
-                "configuracao": "",
-                "acuracia_teste": 0,
-                "acuracia_treino": 0
-            },
-            {
-                "configuracao": "",
-                "acuracia_teste": 0,
-                "acuracia_treino": 0
-            }
+    "Regressão Logística": {
+        "resultados": {
+            "liblinear": [
+                {
+                    "configuracao": "Encoder manual sem escalonamento (previsores) + l2 max_iter = 500",
+                    "acuracia_teste": "85.51%",
+                    "acuracia_treino": "85.49%"
+                },
+                {
+                    "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) + l2 max_iter = 500",
+                    "acuracia_teste": "86.23%",
+                    "acuracia_treino": "85.80%"
+                },
+                {
+                    "configuracao": "Encoder manual sem escalonamento (previsores) + l1 max_iter = 500",
+                    "acuracia_teste": "85.14%",
+                    "acuracia_treino": "85.65%"
+                },
+                {
+                    "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) + l1 max_iter = 500",
+                    "acuracia_teste": "86.23%",
+                    "acuracia_treino": "85.80%"
+                }
+
             ],
-            "melhor_modelo": {
-            "configuracao": "",
+            "newton-cg": [
+                {
+                    "configuracao": "Encoder manual sem escalonamento (previsores) + l2 max_iter = 500",
+                    "acuracia_teste": "86.23%",
+                    "acuracia_treino": "85.80%"
+                },
+                {
+                    "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) + l2 max_iter = 500",
+                    "acuracia_teste": "86.23%",
+                    "acuracia_treino": "85.80%"
+                }
+            ],
+            "saga": [
+                {
+                    "configuracao": "Encoder manual sem escalonamento (previsores) + l2 max_iter = 800",
+                    "acuracia_teste": "81.52%",
+                    "acuracia_treino": "80.81%"
+                },
+                {
+                    "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) + l2 max_iter = 800",
+                    "acuracia_teste": "86.23%",
+                    "acuracia_treino": "85.80%"
+                },
+                {
+                    "configuracao": "Encoder manual sem escalonamento (previsores) + l1 max_iter = 900",
+                    "acuracia_teste": "76.45%",
+                    "acuracia_treino": "80.19%"
+                },
+                {
+                    "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) + l1 max_iter = 900",
+                    "acuracia_teste": "86.23%",
+                    "acuracia_treino": "85.80%"
+                }
+            ],
+            "lbfgs": [
+                {
+                    "configuracao": "Encoder manual sem escalonamento (previsores)",
+                    "acuracia_teste": "75.49%",
+                    "acuracia_treino": "74.18%"
+                },
+                {
+                    "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc)",
+                    "acuracia_teste": "84.99%",
+                    "acuracia_treino": "86.36%"
+                }
+            ]
+        },
+        "melhor_modelo": {
+            "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc)",
             "cross_validation": {
-                "acuracia_media": 0
+                "acuracia_media": "85.17%"
             }
-            }
+        }
+    }
+    },
+    "Decision tree": {
+        "resultados": [
+        {
+            "configuracao": "Encoder manual sem escalonamento (previsores) + criterion = gini + max_depth = 4",
+            "acuracia_teste": "81.16%",
+            "acuracia_treino": "88.14%"
+        },
+        {
+            "configuracao": "Encoder manual sem escalonamento (previsores) + criterion = entropy + max_depth = 6",
+            "acuracia_teste": "81.88%",
+            "acuracia_treino": "91.89%"
+        },
+        {
+            "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) + criterion = entropy + max_depth = 3",
+            "acuracia_teste": "83.70%",
+            "acuracia_treino": "85.18%"
+        },
+        {
+            "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) + criterion = gini + max_depth = 4",
+            "acuracia_teste": "81.16%",
+            "acuracia_treino": "88.14%"
+        }
+        ],
+        "melhor_modelo": {
+        "configuracao": "",
+        "cross_validation": {
+            "acuracia_media": 0
+        }
         }
     }
   }
