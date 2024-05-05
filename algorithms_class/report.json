@@ -242,5 +242,25 @@
             "acuracia_media": "85.81%"
         }
         }
+    },
+    "XGBoost": {
+        "resultados": [
+        {
+            "configuracao": "Encoder manual sem escalonamento (previsores) learning_rate = 0.05 + objective = 'binary:logistic' + max_depth = 2 + n_estimators = 250",
+            "acuracia_teste": "87.32%",
+            "acuracia_treino": "91.73%"
+        },
+        {
+            "configuracao": "Encoder manual com escalonamento Label e HOT (previsoresHot_esc) learning_rate = 0.05 + objective = 'binary:logistic' + max_depth = 2 + n_estimators = 250",
+            "acuracia_teste": "86.59%",
+            "acuracia_treino": "91.73%"
+        }
+        ],
+        "melhor_modelo": {
+        "configuracao": "Encoder manual sem escalonamento (previsores) learning_rate = 0.05 + objective = 'binary:logistic' + max_depth = 2 + n_estimators = 250",
+        "cross_validation": {
+            "acuracia_media": "87.34%"
+        }
+        }
     }
   }
