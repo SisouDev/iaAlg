@@ -1,0 +1,13 @@
+{
+  "labels":[
+    "ALEGRIA",
+    "MEDO",
+    "TRISTEZA",
+    "ANSIEDADE",
+    "ENERGIA",
+    "AMOR",
+    "RAIVA"
+  ],
+  "threshold":0.0,
+  "positive_label":null
+}
